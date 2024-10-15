@@ -2,13 +2,19 @@
 <!DOCTYPE html>
 <html>
 <body>
-<button type="button" onclick="callArkTS()">Click Me!</button>
+<button type="alert" onclick="callArkTS()">Click Me!</button>
+
+<button type="confirm" onclick="confirm()">Click Me!</button>
 <p id="demo"></p>
 <script>
     function callArkTS() {
         let str = jsObj.getUserId();
-        // alert(str);
-        confirm(str);
+        alert(str);
+    }
+
+    function confirm() {
+        let str = jsObj.getUserId();
+        confirm(str)
     }
 </script>
 </body>
