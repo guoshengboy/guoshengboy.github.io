@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-<button type="alert" onclick="callArkTS()">Click Me!</button>
+<button type="button" onclick="callArkTS()">alert</button>
 
-<button type="confirm" onclick="confirm()">Click Me!</button>
+<button type="button" onclick="callArkTS()">confirm</button>
 <p id="demo"></p>
 <script>
     function callArkTS() {
@@ -14,8 +14,9 @@
 
     function confirm() {
         let str = jsObj.getUserId();
-        confirm(str)
+        confirm(str);
     }
+
 </script>
 </body>
 </html>
